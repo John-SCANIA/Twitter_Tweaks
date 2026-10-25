@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>X Tweaks の設定</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1><img src="../icons/icon48.png" alt="" width="28" height="28"> X Tweaks</h1>
+
+  <section>
+    <h2>ツイート</h2>
+    <label class="row"><input type="checkbox" data-key="fxShareButton"> 共有ボタンを fxtwitter のリンクコピーにする</label>
+    <label class="row"><input type="checkbox" data-key="oneClickRetweet"> リツイートを1回押しで完了する</label>
+  </section>
+
+  <section>
+    <h2>プロフィール</h2>
+    <label class="row"><input type="checkbox" data-key="mediaAllTab"> 画像と動画をまとめた「メディア（すべて）」タブを足す</label>
+  </section>
+
+  <section>
+    <h2>左サイドバーで隠す項目</h2>
+    <div id="sidebar-items" class="grid"></div>
+  </section>
+
+  <p class="note">変更はすぐに反映されます。</p>
+  <script src="../content/settings.js"></script>
+  <script src="../content/sidebar-items.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

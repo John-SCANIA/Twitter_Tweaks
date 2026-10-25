@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "X Tweaks",
+  "version": "0.3.0",
+  "description": "Xを使いやすくする：fxtwitterリンクのコピー、サイドバー整理、メディア欄の統合",
+  "icons": {
+    "16": "src/icons/icon16.png",
+    "32": "src/icons/icon32.png",
+    "48": "src/icons/icon48.png",
+    "128": "src/icons/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*"
+  ],
+  "options_page": "src/options/options.html",
+  "action": {
+    "default_title": "X Tweaks の設定",
+    "default_popup": "src/options/options.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*",
+        "https://mobile.x.com/*"
+      ],
+      "js": [
+        "src/content/settings.js",
+        "src/content/sidebar-items.js",
+        "src/content/core.js",
+        "src/features/fx-share.js",
+        "src/features/sidebar.js",
+        "src/features/one-click-retweet.js",
+        "src/features/media-all-tab.js",
+        "src/content/main.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
