@@ -35,7 +35,7 @@
       if (!div.children.length && !div.textContent.trim()) div.remove();
     });
     const label = [...link.querySelectorAll("span")].find((s) => s.textContent.trim()) || link;
-    label.textContent = "メディア（すべて）";
+    label.textContent = "メディア(すべて)";
     link.addEventListener("click", (event) => {
       if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey) return;
       event.preventDefault();
