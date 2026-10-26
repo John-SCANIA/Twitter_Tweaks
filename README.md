@@ -25,5 +25,4 @@ Xを使いやすくするための拡張機能です。
 - `src/features/` 機能ごとのファイル
 - `src/options/` 設定画面
 
-
-この拡張機能はClaude Opus 5.5が作りました。
+Co-Authored-By: Claude <noreply@anthropic.com>
